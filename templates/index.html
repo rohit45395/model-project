@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Churn Modelling </title>
+</head>
+
+<body>
+    <form action="/predict"  method="post">
+
+        <label>CreditScore</label>
+        <input type="text" name="credit_score"><br><br>
+
+        <label>Geography</label> 
+        <select name="geography">
+            <option value="0">France</option>
+            <option value="1">Germany</option>
+            <option value="2">Spain</option>
+        </select><br><br>
+
+
+        <label>Gender</label> 
+        <select name="gender">
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select><br><br> 
+
+        <label>Age</label>
+        <input type="text" name="age"><br><br>
+
+        <label>Tenure</label>
+        <input type="text" name="tenure"><br><br>
+
+        <label>Balance</label>
+        <input type="text" name="balance"><br><br>
+
+        <label>NumOfProducts</label> 
+        <select name="numofproducts">
+            <option value="1">1</option>
+            <option value="2">3</option>
+            <option value="3">2</option>
+            <option value="4">4</option>
+        </select> <br><br>
+
+        <label>HasCrCard</label> 
+        <select name="hascrcard">
+            <option value="1">YES</option>
+            <option value="0">No</option>
+        </select><br><br>
+
+        <label>IsActiveMember</label> 
+        <select name="isactivemember">
+            <option value="1">Active</option>
+            <option value="0">NotActive</option>
+        </select><br><br>
+
+        <label>EstimatedSalary</label>
+        <input type="text" name="estimatedsalary"><br><br>
+
+        <input type="submit"  value="Predict">
+
+
+    </form>
+</body>
+</html>
+
